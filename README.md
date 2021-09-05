@@ -8,7 +8,7 @@ Don't forget to join the channel for more videos like this.
 ![Resume cv](/preview.png)
 # Documentation
 
-## A. PROJECT SETUP
+## A. PROJECT SETUP & VARIABLE CSS
 ### index.html
 1. Add CSS for webpage styling.
 <link rel="stylesheet" href="assets/css/styles.css">
@@ -107,4 +107,45 @@ Under variable css, :root section,
 }
 ```
 
-12.
+## RESET HTML
+### assets/css/styles.css
+1. Under the 'Base' section, reset the html by adding the ff code.
+```
+/*==================== BASE ====================*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,h2,h3,h4{
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;  
+}
+
+```
