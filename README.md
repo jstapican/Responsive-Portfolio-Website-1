@@ -174,3 +174,20 @@ img{
   text-align: center;
 }
 ```
+
+## D. LAYOUT
+### assets/css/styles.css
+1. Under the 'Layout' section, add the ff code.
+```
+/*==================== LAYOUT ====================*/
+.container{
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+```
