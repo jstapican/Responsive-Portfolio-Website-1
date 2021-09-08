@@ -191,3 +191,392 @@ img{
   gap: 1.5rem;
 }
 ```
+
+## E. HEADER & NAV MENU
+### index.html
+1. Under the 'Header' section in the body tag, add the ff code.
+```
+<!--==================== HEADER ====================-->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#" class="nav__logo">Steven</a>
+
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list grid">
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+
+          </a>
+          <a href="#" class="nav__link">
+
+          </a>
+          <a href="#" class="nav__link">
+
+          </a>
+          <a href="#" class="nav__link">
+
+          </a>
+          <a href="#" class="nav__link">
+
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+```
+2. Go to Iconscout then add icons for the navbar.
+Search 'home' first then copy the font code to the 1st list element.
+Add a space after the icon before the anchor text.
+Add URL in the href.
+```
+<!--==================== HEADER ====================-->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#" class="nav__logo">Steven</a>
+
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list grid">
+        <li class="nav__item">
+          <a href="#home" class="nav__link">
+            <i class="uil uil-estate"></i> Home
+          </a
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+```
+3. Do the same for the ff icons: About, Skills, Services, Portfolio, Contact Me.
+```
+<!--==================== HEADER ====================-->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#" class="nav__logo">Steven</a>
+
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list grid">
+        <li class="nav__item">
+          <a href="#home" class="nav__link">
+            <i class="uil uil-estate"></i> Home
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">
+            <i class="uil uil-user"></i> About
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#skills" class="nav__link">
+            <i class="uil uil-file-alt"></i> Skills
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#services" class="nav__link">
+            <i class="uil uil-briefcase-alt"></i> Services
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#portfolio" class="nav__link">
+            <i class="uil uil-scenery"></i> Portfolio
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">
+            <i class="uil uil-message"></i> Contact Me
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+```
+
+4. Add a nav__close and nav__toggle from Iconscout in the header.
+```
+<!--==================== HEADER ====================-->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#" class="nav__logo">Steven</a>
+
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list grid">
+        <li class="nav__item">
+          <a href="#home" class="nav__link">
+            <i class="uil uil-estate"></i> Home
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">
+            <i class="uil uil-user"></i> About
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#skills" class="nav__link">
+            <i class="uil uil-file-alt"></i> Skills
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#services" class="nav__link">
+            <i class="uil uil-briefcase-alt"></i> Services
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#portfolio" class="nav__link">
+            <i class="uil uil-scenery"></i> Portfolio
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">
+            <i class="uil uil-message"></i> Contact Me
+          </a>
+        </li>
+      </ul>
+      <i class="uil uil-times nav__close" id="nav-close"></i>
+    </div>
+
+    <div class="nav__">
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-apps"></i>
+      </div>
+    </div>
+  </nav>
+</header>
+```
+
+### assets/css/styles.css
+1. Under the 'Layouts' section, add the ff code.
+```
+.header{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
+```
+
+Preview.
+(/readme-img/Header & Nav Menu1.png)
+!(/preview.png)
+
+2. Under the 'Nav' section, add the ff code.
+```
+.nav{
+  max-width: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+```
+
+Preview.
+(/readme-img/Header & Nav Menu2.png)
+
+3. Now we'll change the color and the font weight of 'Steven' and the nav__toggle.
+Add the ff code next.
+```
+.nav__logo,
+.nav_toggle{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+```
+
+Preview.
+(/readme-img/Header & Nav Menu3.png)
+
+4. Now we'll add a hover effect of color change in the 'Steven' logo.
+```
+.nav__logo:hover{
+  color: var(--first-color);  
+}
+```
+
+Preview.
+(/readme-img/Header & Nav Menu4.png)
+
+5. Now we'll add a hover effect of color change in the nav toggle.
+```
+.nav_toggle{
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav__toggle:hover{
+  color: var(--first-color);
+
+}
+```
+
+6. Now we'll add code for responsiveness.
+```
+@media screen and (max-width: 767px){
+  .nav__menu{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+}
+```
+
+Preview.
+(/readme-img/Header & Nav Menu5.png)
+
+7. Next we're going to apply a 3-column grid in nav bar.
+```
+.nav__list{
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+```
+
+Preview.
+(/readme-img/Header & Nav Menu6.png)
+
+8. Now we'll add a hover effect of color change in the nav links.
+```
+.nav__link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__link:hover{
+  color: var(--first-color);
+}
+```
+
+Preview.
+(/readme-img/Header & Nav Menu7.png)
+
+9. Next we will adjust the font-size of the icons and the font color of the nav close button.
+```
+.nav__icon{
+  font-size: 1.2rem;
+}
+
+.nav__close{
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+}
+
+.nav__close:hover{
+  color: var(--first-color-alt);
+}
+```
+
+10. Now it's time to add an effect to have the nav bar pop up from bottom (for small screens).
+Change the 'bottom' parameter in the nav section under responsiveness code block.
+```
+@media screen and (max-width: 767px){
+  .nav__menu{
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+}
+```
+
+Preview.
+(/readme-img/Header & Nav Menu8.png)
+
+### assets/js/main.js
+1. Now let's add our first javascript.
+```
+/*==================== MENU SHOW Y HIDDEN ====================*/
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle')
+      navClose = document.getElementById('nav-close')
+
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+if(navToggle){
+  navToggle.addEventListener('click', ()=>{
+    navMenu.classList.add('show-menu')
+  })
+}
+```
+
+### assets/css/styles.css
+11. After adding the new javascript code, let's style the show menu.
+```
+/* show menu */
+.show-menu{
+  bottom: 0;
+}
+```
+
+Let's refresh the webpage to seee the changes. As you can see if we click the nav toggle a menu of links will show up.
+Take note that the nav close is not working yet when you try clicking it to close the menu.
+
+### assets/js/main.js
+2. Let's add a close feature in our show menu.
+```
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+if(navClose){
+  navClose.addEventListener('click', ()=>{
+    navMenu.classList.remove('show-menu')
+  })
+}
+```
+
+3. Next we add a similar feature when we click the links. This JavaScript will close the menu each time you click a link.
+```
+/*==================== REMOVE MENU MOBILE ====================*/
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction(){
+  const navMenu = document.getElementById('nav-menu')
+  // When we click on each nav__link, we remove the show-menu class
+  navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+```
