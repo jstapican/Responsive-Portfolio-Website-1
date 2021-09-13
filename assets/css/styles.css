@@ -241,7 +241,15 @@ img{
 
 
 /*==================== HOME ====================*/
+.home__container{
+  gap: 1rem;
+}
 
+.home__content{
+  grid-template-columns: 0.5fr 3fr;
+  padding-top: 3.5rem;
+  align-items: center;
+}
 
 /*==================== BUTTONS ====================*/
 

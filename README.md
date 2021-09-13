@@ -383,8 +383,7 @@ Add URL in the href.
 ```
 
 Preview.
-(/readme-img/Header & Nav Menu1.png)
-!(/preview.png)
+![](/readme-img/Header & Nav Menu1.png)
 
 2. Under the 'Nav' section, add the ff code.
 ```
@@ -398,7 +397,7 @@ Preview.
 ```
 
 Preview.
-(/readme-img/Header & Nav Menu2.png)
+![](/readme-img/Header & Nav Menu2.png)
 
 3. Now we'll change the color and the font weight of 'Steven' and the nav__toggle.
 Add the ff code next.
@@ -411,7 +410,7 @@ Add the ff code next.
 ```
 
 Preview.
-(/readme-img/Header & Nav Menu3.png)
+![](/readme-img/Header & Nav Menu3.png)
 
 4. Now we'll add a hover effect of color change in the 'Steven' logo.
 ```
@@ -421,7 +420,7 @@ Preview.
 ```
 
 Preview.
-(/readme-img/Header & Nav Menu4.png)
+![](/readme-img/Header & Nav Menu4.png)
 
 5. Now we'll add a hover effect of color change in the nav toggle.
 ```
@@ -454,7 +453,7 @@ Preview.
 ```
 
 Preview.
-(/readme-img/Header & Nav Menu5.png)
+![](/readme-img/Header & Nav Menu5.png)
 
 7. Next we're going to apply a 3-column grid in nav bar.
 ```
@@ -465,7 +464,7 @@ Preview.
 ```
 
 Preview.
-(/readme-img/Header & Nav Menu6.png)
+![](/readme-img/Header & Nav Menu6.png)
 
 8. Now we'll add a hover effect of color change in the nav links.
 ```
@@ -484,7 +483,7 @@ Preview.
 ```
 
 Preview.
-(/readme-img/Header & Nav Menu7.png)
+![](/readme-img/Header & Nav Menu7.png)
 
 9. Next we will adjust the font-size of the icons and the font color of the nav close button.
 ```
@@ -525,7 +524,7 @@ Change the 'bottom' parameter in the nav section under responsiveness code block
 ```
 
 Preview.
-(/readme-img/Header & Nav Menu8.png)
+![](/readme-img/Header & Nav Menu8.png)
 
 ### assets/js/main.js
 1. Now let's add our first javascript.
@@ -580,3 +579,201 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 ```
+
+## F. HOME
+### index.html
+1. Let's start creating our homepage by adding social media links.
+Under the MAIN >> HOME, add the ff code.
+```
+<!--==================== HOME ====================-->
+<section class="home section" id="home">
+    <div class="home__container container grid">
+      <div class="home__content grid">
+        <div class="home__social">
+          <a href="https://www.linkedin.com/" target="_blank" class="home__social-icon">
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+
+          <a href="https://www.dribble.com/" target="_blank"class="home__social-icon">
+            <i class="uil uil-dribbble"></i>
+          </a>
+
+          <a href="https://github.com/" target="_blank" class="home__social-icon">
+            <i class="uil uil-github-alt"></i>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+</section>
+```
+
+Preview.
+![](/readme-img/Home1.png)
+
+2. Next we add a blob. Open /assets/img/blob.svg and copy the code.
+Create a new div inside HOME >> MAIN section and paste the svg code.
+Note that we have a profile image without bg saved in the assets.
+```
+<!--==================== HOME ====================-->
+<section class="home section" id="home">
+    <div class="home__container container grid">
+      <div class="home__content grid">
+        <div class="home__social">
+          <a href="https://www.linkedin.com/" target="_blank" class="home__social-icon">
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+
+          <a href="https://www.dribble.com/" target="_blank"class="home__social-icon">
+            <i class="uil uil-dribbble"></i>
+          </a>
+
+          <a href="https://github.com/" target="_blank" class="home__social-icon">
+            <i class="uil uil-github-alt"></i>
+          </a>
+        </div>
+
+        <div class="home__img">
+          <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0" mask-type="alpha">
+                  <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                  130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                  97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+                  0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+              </mask>
+              <g mask="url(#mask0)">
+                  <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                  165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                  129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                  -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                  <image class="home__blob-img" href="assets/img/profile.png"/>
+              </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+</section>
+```
+
+Preview.
+![](/readme-img/Home2.png)
+
+3. Let's add a profile tagline.
+```
+<!--==================== HOME ====================-->
+<section class="home section" id="home">
+    <div class="home__container container grid">
+      <div class="home__content grid">
+        <div class="home__social">
+          <a href="https://www.linkedin.com/" target="_blank" class="home__social-icon">
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+
+          <a href="https://www.dribble.com/" target="_blank"class="home__social-icon">
+            <i class="uil uil-dribbble"></i>
+          </a>
+
+          <a href="https://github.com/" target="_blank" class="home__social-icon">
+            <i class="uil uil-github-alt"></i>
+          </a>
+        </div>
+
+        <div class="home__img">
+          <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0" mask-type="alpha">
+                  <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                  130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                  97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+                  0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+              </mask>
+              <g mask="url(#mask0)">
+                  <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                  165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                  129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                  -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                  <image class="home__blob-img" href="assets/img/profile.png"/>
+              </g>
+          </svg>
+        </div>
+
+        <div class="home__data">
+          <h1 class="home__title">Hi, I'm Steven</h1>
+          <h3 class="home__subtitle">Fullstack RPA Developer</h3>
+          <p class="home__description">Building quality websites and helping companies automate tasks.</p>
+          <a href="#contact" class="button button--flex">
+            Contact Me <i class="uil uil-message button__icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+</section>
+```
+
+Preview.
+![](/readme-img/Home3.png)
+
+4. Let's add a scroll down icon below the tagline.
+```
+<!--==================== HOME ====================-->
+<section class="home section" id="home">
+    <div class="home__container container grid">
+      <div class="home__content grid">
+        <div class="home__social">
+          <a href="https://www.linkedin.com/" target="_blank" class="home__social-icon">
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+
+          <a href="https://www.dribble.com/" target="_blank"class="home__social-icon">
+            <i class="uil uil-dribbble"></i>
+          </a>
+
+          <a href="https://github.com/" target="_blank" class="home__social-icon">
+            <i class="uil uil-github-alt"></i>
+          </a>
+        </div>
+
+        <div class="home__img">
+          <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0" mask-type="alpha">
+                  <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                  130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                  97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+                  0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+              </mask>
+              <g mask="url(#mask0)">
+                  <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                  165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                  129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                  -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                  <image class="home__blob-img" href="assets/img/profile.png"/>
+              </g>
+          </svg>
+        </div>
+
+        <div class="home__data">
+          <h1 class="home__title">Hi, I'm Steven</h1>
+          <h3 class="home__subtitle">Fullstack RPA Developer</h3>
+          <p class="home__description">Building quality websites and helping companies automate tasks.</p>
+          <a href="#contact" class="button button--flex">
+            Contact Me <i class="uil uil-message button__icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="home__scroll">
+        <a href="#about" class="home__scroll-button button--flex">
+          <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+          <span class="home__scroll-name">Scroll down</span>
+          <i class="uil uil-arrow-down home__scroll-arrow"></i>
+        </a>
+      </div>
+    </div>
+</section>
+```
+
+Preview.
+![](/readme-img/Home4.png)
