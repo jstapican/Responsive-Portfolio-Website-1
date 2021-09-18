@@ -1142,3 +1142,49 @@ Preview.
 
 Preview.
 ![](/readme-img/Home11.png)
+
+## G. BUTTONS
+### assets/css/styles.css
+1. Now we're going to style our 'Contact Me' button.
+```
+/*==================== BUTTONS ====================*/
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+```
+
+Preview.
+![](/readme-img/Buttons1.png)
+
+2. Next we add a hover effect and fix the text alignment inside the button.
+```
+/*==================== BUTTONS ====================*/
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+
+.button__icon{
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
+}
+
+.button--flex{
+  display: inline-flex;
+  align-items: center;
+}
+```
