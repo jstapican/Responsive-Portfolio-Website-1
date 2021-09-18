@@ -1188,3 +1188,195 @@ Preview.
   align-items: center;
 }
 ```
+
+## H. ABOUT
+### index.html
+1. Now we're creating an ABOUT section.
+```
+<!--==================== ABOUT ====================-->
+<section class="about section" id="about">
+  <h2 class="section__title">About Me</h2>
+  <span class="section__subtitle">My Introduction</span>
+  <div class="about__container container grid">
+    <img src="assets/img/about.png" alt="" class="about__img">
+    <div class="about__data">
+      <p class="about__description">
+        Worked as data and reports analyst for four years
+        with experience in website and microapps development and
+        building workflows automation for banking-BPO, ecommerce and startup companies.
+      </p>
+
+      <div class="about__info">
+        <div>
+          <span class="about__info-title">08+</span>
+          <span class="about__info-name">Years <br> experience</span>
+        </div>
+
+        <div>
+          <span class="about__info-title">20+</span>
+          <span class="about__info-name">Completed <br> projects</span>
+        </div>
+
+        <div>
+          <span class="about__info-title">05+</span>
+          <span class="about__info-name">Companies <br> worked</span>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+```
+
+Preview.
+![](/readme-img/About1.png)
+
+2. Insert a download button for the resume.
+```
+<!--==================== ABOUT ====================-->
+<section class="about section" id="about">
+  <h2 class="section__title">About Me</h2>
+  <span class="section__subtitle">My Introduction</span>
+  <div class="about__container container grid">
+    <img src="assets/img/about.png" alt="" class="about__img">
+    <div class="about__data">
+      <p class="about__description">
+        Worked as data and reports analyst for four years
+        with experience in website and microapps development and
+        building workflows automation for banking-BPO, ecommerce and startup companies.
+      </p>
+
+      <div class="about__info">
+        <div>
+          <span class="about__info-title">08+</span>
+          <span class="about__info-name">Years <br> experience</span>
+        </div>
+
+        <div>
+          <span class="about__info-title">20+</span>
+          <span class="about__info-name">Completed <br> projects</span>
+        </div>
+
+        <div>
+          <span class="about__info-title">05+</span>
+          <span class="about__info-name">Companies <br> worked</span>
+        </div>
+      </div>
+
+      <div class="about__buttons">
+        <a download="" href="assets/pdf/resume-cv.pdf" class="button button--flex">
+          Download Resume<i class="uil uil-download-alt button__icon"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+Preview.
+![](/readme-img/About2.png)
+
+### assets/css/styles.css
+1. Now we will be applying some styling in the 'about' image and description.
+```
+/*==================== ABOUT ====================*/
+.about__img{
+  width: 200px;
+  border-radius: 0.5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__description{
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+```
+
+2. Next we're going to change the styling for the 'about' info.
+```
+/*==================== ABOUT ====================*/
+.about__img{
+  width: 200px;
+  border-radius: 0.5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__description{
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.about__info-name{
+  font-size: var(--smaller-font-size);
+}
+
+.about__info-title,
+.about__info-name{
+  display: block;
+  text-align: center;
+}
+```
+
+Preview.
+![](/readme-img/About3.png)
+
+3. Next we center the 'Download Resume' button.
+```
+/*==================== ABOUT ====================*/
+.about__img{
+  width: 200px;
+  border-radius: 0.5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__description{
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.about__info-name{
+  font-size: var(--smaller-font-size);
+}
+
+.about__info-title,
+.about__info-name{
+  display: block;
+  text-align: center;
+}
+
+.about__buttons{
+  display: flex;
+  justify-content: center;
+}
+```
+
+Preview.
+![](/readme-img/About4.png)
