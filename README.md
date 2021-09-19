@@ -1380,3 +1380,1082 @@ Preview.
 
 Preview.
 ![](/readme-img/About4.png)
+
+## I. SKILLS
+### index.html
+1. Now we're going to add a 'Skills' section.
+```
+<!--==================== SKILLS ====================-->
+<section class="skills section" id="skills">
+  <h2 class="section__title">Skills</h2>
+  <span class="section__subtitle">My Technical Level</span>
+</section>
+```
+
+Preview.
+![](/readme-img/Skills1.png)
+
+2. Let's add our first skill.
+```
+<!--==================== SKILLS ====================-->
+<section class="skills section" id="skills">
+  <h2 class="section__title">Skills</h2>
+  <span class="section__subtitle">My Technical Level</span>
+
+  <div class="skills__container container grid">
+    <div>
+      <!--==================== SKILLS 1 ====================-->
+      <div class="skills__content">
+        <div class="skills__header">
+          <i class="uil uil-brackets-curly skills__icon"></i>
+
+          <div>
+            <h1 class="skills__title">Frontend Developer</h1>
+            <span class="skills__subtitle">More than 4 years</span>
+          </div>
+
+            <i class="uil uil-angle-down skills__arrow"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+3. Next we add the languages and technologies we know.
+```
+<!--==================== SKILLS ====================-->
+<section class="skills section" id="skills">
+  <h2 class="section__title">Skills</h2>
+  <span class="section__subtitle">My Technical Level</span>
+
+  <div class="skills__container container grid">
+    <div>
+      <!--==================== SKILLS 1 ====================-->
+      <div class="skills__content">
+        <div class="skills__header">
+          <i class="uil uil-brackets-curly skills__icon"></i>
+
+          <div>
+            <h1 class="skills__title">Frontend Developer</h1>
+            <span class="skills__subtitle">More than 4 years</span>
+          </div>
+
+            <i class="uil uil-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list grid">
+          <div class="skills__data">
+            <div class="skills__title">
+              <h3 class="skills__name">HTML</h3>
+              <span class="skills__number">90%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__html"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+Preview.
+![](/readme-img/Skills2.png)
+
+4. Now we fill our other frontend and backend skills.
+```
+<!--==================== SKILLS ====================-->
+<section class="skills section" id="skills">
+  <h2 class="section__title">Skills</h2>
+  <span class="section__subtitle">My Technical Level</span>
+
+  <div class="skills__container container grid">
+    <div>
+      <!--==================== FRONTEND SKILLS ====================-->
+      <div class="skills__content">
+        <div class="skills__header">
+          <i class="uil uil-brackets-curly skills__icon"></i>
+
+          <div>
+            <h1 class="skills__title">Frontend Developer</h1>
+            <span class="skills__subtitle">More than 4 years</span>
+          </div>
+
+            <i class="uil uil-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list grid">
+          <div class="skills__data">
+            <div class="skills__title">
+              <h3 class="skills__name">HTML, CSS & Bootstrap</h3>
+              <span class="skills__number">90%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__htmlcss"></span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__title">
+              <h3 class="skills__name">JavaScript</h3>
+              <span class="skills__number">60%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__js"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--==================== BACKEND SKILLS ====================-->
+      <div class="skills__content">
+        <div class="skills__header">
+          <i class="uil uil-server-network skills__icon"></i>
+
+          <div>
+            <h1 class="skills__title">Backend Developer</h1>
+            <span class="skills__subtitle">More than 2 years</span>
+          </div>
+
+            <i class="uil uil-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list grid">
+          <div class="skills__data">
+            <div class="skills__title">
+              <h3 class="skills__name">Ruby & Rails</h3>
+              <span class="skills__number">90%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__ror"></span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__title">
+              <h3 class="skills__name">Python & Django</h3>
+              <span class="skills__number">30%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__python"></span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__title">
+              <h3 class="skills__name">PHP & Laravel</h3>
+              <span class="skills__number">10%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__php"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+Preview.
+![](/readme-img/Skills3.png)
+
+5. We add another div for our data and reports skills.
+```
+<div>
+  <!--==================== DATA & REPORTS SKILLS ====================-->
+  <div class="skills__content">
+    <div class="skills__header">
+      <i class="uil uil-brain skills__icon"></i>
+
+      <div>
+        <h1 class="skills__title">Data & Reports Engineer</h1>
+        <span class="skills__subtitle">More than 4 years</span>
+      </div>
+
+        <i class="uil uil-angle-down skills__arrow"></i>
+    </div>
+
+    <div class="skills__list grid">
+      <div class="skills__data">
+        <div class="skills__title">
+          <h3 class="skills__name">Excel VBA & Googlesheets</h3>
+          <span class="skills__number">95%</span>
+        </div>
+        <div class="skills__bar">
+          <span class="skills__percentage skills__ror"></span>
+        </div>
+      </div>
+
+      <div class="skills__data">
+        <div class="skills__title">
+          <h3 class="skills__name">UiPath & Web Scraping</h3>
+          <span class="skills__number">70%</span>
+        </div>
+        <div class="skills__bar">
+          <span class="skills__percentage skills__python"></span>
+        </div>
+      </div>
+
+      <div class="skills__data">
+        <div class="skills__title">
+          <h3 class="skills__name">SQL</h3>
+          <span class="skills__number">10%</span>
+        </div>
+        <div class="skills__bar">
+          <span class="skills__percentage skills__php"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+```
+
+Preview.
+![](/readme-img/Skills4.png)
+
+### assets/css/styles.css
+1. Now it's time to add some styling for our 'skills' section.
+```
+/*==================== SKILLS ====================*/
+.skills__container{
+  row-gap: 0;
+}
+
+.skills__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon{
+  margin-right: var(--mb-0-75);
+}
+```
+
+Preview.
+![](/readme-img/Skills5.png)
+
+2. Then we adjust the size of the skill title and subtitle.
+```
+/*==================== SKILLS ====================*/
+.skills__container{
+  row-gap: 0;
+}
+
+.skills__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon{
+  margin-right: var(--mb-0-75);
+}
+
+.skills__title{
+  font-size: var(--h3-font-size);
+}
+
+.skills__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+```
+
+3. We'll have the skill and progress percentage in a single line.
+Note that we change the '.skills__title' to '.skills__titles'.
+```
+/*==================== SKILLS ====================*/
+.skills__container{
+  row-gap: 0;
+}
+
+.skills__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon{
+  margin-right: var(--mb-0-75);
+}
+
+.skills__titles{
+  font-size: var(--h3-font-size);
+}
+
+.skills__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__arrow{
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.skills__titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+```
+
+Preview.
+![](/readme-img/Skills6.png)
+
+4. Fix the font-size and font-weight of the skill names.
+```
+/*==================== SKILLS ====================*/
+.skills__container{
+  row-gap: 0;
+}
+
+.skills__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon{
+  margin-right: var(--mb-0-75);
+}
+
+.skills__titles{
+  font-size: var(--h3-font-size);
+}
+
+.skills__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__arrow{
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.skills__titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+```
+
+Preview.
+![](/readme-img/Skills7.png)
+
+5. Add a progress bar for each skills.
+```
+/*==================== SKILLS ====================*/
+.skills__container{
+  row-gap: 0;
+}
+
+.skills__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon{
+  margin-right: var(--mb-0-75);
+}
+
+.skills__titles{
+  font-size: var(--h3-font-size);
+}
+
+.skills__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__arrow{
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.skills__titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage{
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills__bar{
+  background-color: var(--first-color-lighter);
+}
+```
+
+Preview.
+![](/readme-img/Skills8.png)
+
+6. Add status for each progress bar.
+```
+/*==================== SKILLS ====================*/
+.skills__container{
+  row-gap: 0;
+}
+
+.skills__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon{
+  margin-right: var(--mb-0-75);
+}
+
+.skills__titles{
+  font-size: var(--h3-font-size);
+}
+
+.skills__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__arrow{
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.skills__titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage{
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills__bar{
+  background-color: var(--first-color-lighter);
+}
+
+.skills__percentage{
+  display: block;
+  background-color: var(--first-color);
+}
+
+.skills__htmlcss{
+  width: 80%;
+}
+
+.skills__js{
+  width: 60%;
+}
+
+.skills__ror{
+  width: 90%;
+}
+
+.skills__python{
+  width: 60%;
+}
+
+.skills__php{
+  width: 20%;
+}
+
+.skills__excel{
+  width: 95%;
+}
+
+.skills__uipath{
+  width: 70%;
+}
+
+.skills__sql{
+  width: 20%;
+}
+```
+
+Preview.
+![](/readme-img/Skills9.png)
+
+7. Add a left padding for each skills.
+```
+/*==================== SKILLS ====================*/
+.skills__container{
+  row-gap: 0;
+}
+
+.skills__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon{
+  margin-right: var(--mb-0-75);
+}
+
+.skills__titles{
+  font-size: var(--h3-font-size);
+}
+
+.skills__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__arrow{
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.skills__list{
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills__titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage{
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills__bar{
+  background-color: var(--first-color-lighter);
+}
+
+.skills__percentage{
+  display: block;
+  background-color: var(--first-color);
+}
+
+.skills__htmlcss{
+  width: 80%;
+}
+
+.skills__js{
+  width: 60%;
+}
+
+.skills__ror{
+  width: 90%;
+}
+
+.skills__python{
+  width: 60%;
+}
+
+.skills__php{
+  width: 20%;
+}
+
+.skills__excel{
+  width: 95%;
+}
+
+.skills__uipath{
+  width: 70%;
+}
+
+.skills__sql{
+  width: 20%;
+}
+```
+
+Preview.
+![](/readme-img/Skills10.png)
+
+### index.html
+6. Now let's add a class 'skills__open'for our first set of skills and 'skills__close' for the rest.
+```
+<!--==================== SKILLS ====================-->
+<section class="skills section" id="skills">
+  <h2 class="section__title">Skills</h2>
+  <span class="section__subtitle">My Technical Level</span>
+
+  <div class="skills__container container grid">
+    <div>
+      <!--==================== FRONTEND SKILLS ====================-->
+      <div class="skills__content skills__open">
+        <div class="skills__header">
+          <i class="uil uil-brackets-curly skills__icon"></i>
+
+          <div>
+            <h1 class="skills__titles">Frontend Developer</h1>
+            <span class="skills__subtitle">More than 4 years</span>
+          </div>
+
+            <i class="uil uil-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list grid">
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">HTML, CSS & Bootstrap</h3>
+              <span class="skills__number">80%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__htmlcss"></span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">JavaScript</h3>
+              <span class="skills__number">60%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__js"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--==================== BACKEND SKILLS ====================-->
+      <div class="skills__content skills__close">
+        <div class="skills__header">
+          <i class="uil uil-server-network skills__icon"></i>
+
+          <div>
+            <h1 class="skills__titles">Backend Developer</h1>
+            <span class="skills__subtitle">More than 2 years</span>
+          </div>
+
+            <i class="uil uil-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list grid">
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">Ruby & Rails</h3>
+              <span class="skills__number">90%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__ror"></span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">Python & Django</h3>
+              <span class="skills__number">60%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__python"></span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">PHP & Laravel</h3>
+              <span class="skills__number">20%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__php"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <!--==================== DATA & REPORTS SKILLS ====================-->
+      <div class="skills__content skills__close">
+        <div class="skills__header">
+          <i class="uil uil-brain skills__icon"></i>
+
+          <div>
+            <h1 class="skills__titles">Data & Reports Engineer</h1>
+            <span class="skills__subtitle">More than 4 years</span>
+          </div>
+
+            <i class="uil uil-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list grid">
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">Excel VBA & Googlesheets</h3>
+              <span class="skills__number">95%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__excel"></span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">UiPath & Web Scraping</h3>
+              <span class="skills__number">70%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__uipath"></span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">SQL</h3>
+              <span class="skills__number">20%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__percentage skills__sql"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+### assets/css/styles.css
+8. Next we'll create some styling for the list under 'skills__close'.
+This will hide skills listed under this subsection.
+Please note that we add a margin bottom for 'skills__open'.
+```
+/*==================== SKILLS ====================*/
+.skills__container{
+  row-gap: 0;
+}
+
+.skills__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon{
+  margin-right: var(--mb-0-75);
+}
+
+.skills__titles{
+  font-size: var(--h3-font-size);
+}
+
+.skills__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__arrow{
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.skills__list{
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills__titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage{
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills__bar{
+  background-color: var(--first-color-lighter);
+}
+
+.skills__percentage{
+  display: block;
+  background-color: var(--first-color);
+}
+
+.skills__htmlcss{
+  width: 80%;
+}
+
+.skills__js{
+  width: 60%;
+}
+
+.skills__ror{
+  width: 90%;
+}
+
+.skills__python{
+  width: 60%;
+}
+
+.skills__php{
+  width: 20%;
+}
+
+.skills__excel{
+  width: 95%;
+}
+
+.skills__uipath{
+  width: 70%;
+}
+
+.skills__sql{
+  width: 20%;
+}
+
+.skills__close .skills__list{
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open  .skills__list{
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+```
+
+Preview.
+![](/readme-img/Skills11.png)
+
+9. Now we're going to rotate the 'skills__arrow' when the skillset of the subsection is open.
+```
+/*==================== SKILLS ====================*/
+.skills__container{
+  row-gap: 0;
+}
+
+.skills__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon{
+  margin-right: var(--mb-0-75);
+}
+
+.skills__titles{
+  font-size: var(--h3-font-size);
+}
+
+.skills__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__arrow{
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.skills__list{
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills__titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage{
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills__bar{
+  background-color: var(--first-color-lighter);
+}
+
+.skills__percentage{
+  display: block;
+  background-color: var(--first-color);
+}
+
+.skills__htmlcss{
+  width: 80%;
+}
+
+.skills__js{
+  width: 60%;
+}
+
+.skills__ror{
+  width: 90%;
+}
+
+.skills__python{
+  width: 60%;
+}
+
+.skills__php{
+  width: 20%;
+}
+
+.skills__excel{
+  width: 95%;
+}
+
+.skills__uipath{
+  width: 70%;
+}
+
+.skills__sql{
+  width: 20%;
+}
+
+.skills__close .skills__list{
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open  .skills__list{
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow{
+  transform: rotate(-180deg);
+}
+```
+
+Preview.
+![](/readme-img/Skills12.png)
+
+### /assets/js/main.js
+1. Now let's create an accordion in js to facilitate our open and close effect for our skills.
+```
+/*==================== ACCORDION SKILLS ====================*/
+const skillsContent = document.getElementsByClassName('skills__content'),
+      skillsHeader = document.querySelectorAll('.skills__header')
+
+function toggleSkills(){
+  let itemClass = this.parentNode.className
+
+  for(i = 0; i < skillsContent.length; i++){
+    skillsContent[i].className = 'skills__content skills__close'
+  }
+  if (itemClass === 'skills__content skills__close') {
+    this.parentNode.className = 'skills__content skills__open'
+  }
+}
+
+skillsHeader.forEach((el) => {
+  el.addEventListener('click', toggleSkills)
+})
+```
+
+Preview.
+![](/readme-img/Skills13.png)
