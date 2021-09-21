@@ -2459,3 +2459,929 @@ skillsHeader.forEach((el) => {
 
 Preview.
 ![](/readme-img/Skills13.png)
+
+## J. Qualification
+### index.html
+1. Now we will create a qualification section for our work experience.
+```
+<!--==================== QUALIFICATION ====================-->
+<section class="qualification section">
+  <h2 class="section__title">Qualification</h2>
+  <span class="section__subtitle">My Personal Journey</span>
+</section>
+```
+
+Preview.
+![](/readme-img/Qualification1.png)
+
+2. Let's add an education and work subsection.
+```
+<!--==================== QUALIFICATION ====================-->
+<section class="qualification section">
+  <h2 class="section__title">Qualification</h2>
+  <span class="section__subtitle">My Personal Journey</span>
+
+  <div class="qualification__container container">
+    <div class="qualification__tabs">
+      <div class="qualification__button button--flex">
+        <i class="uil uil-graduation-cap qualification__icon"></i>
+        Education
+      </div>
+
+      <div class="qualification__button button--flex">
+        <i class="uil uil-briefcase-alt qualification__icon"></i>
+        Work
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+Preview.
+![](/readme-img/Qualification2.png)
+
+3. Next let's add the rest of our experience.
+```
+<!--==================== QUALIFICATION ====================-->
+<section class="qualification section">
+  <h2 class="section__title">Qualification</h2>
+  <span class="section__subtitle">My Personal Journey</span>
+
+  <div class="qualification__container container">
+    <div class="qualification__tabs">
+      <div class="qualification__button button--flex">
+        <i class="uil uil-graduation-cap qualification__icon"></i>
+        Education
+      </div>
+
+      <div class="qualification__button button--flex">
+        <i class="uil uil-briefcase-alt qualification__icon"></i>
+        Work
+      </div>
+    </div>
+
+    <div class="qualification__sections">
+      <!--==================== QUALIFICATION CONTENT ====================-->
+      <div class="qualification__content">
+        <!--==================== EDUCATION QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">BS Materials Science & Engineering</h3>
+            <span class="qualification__subtitle">University of the Philippines Diliman</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2008 - 2013
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Operations Executive</h3>
+            <span class="qualification__subtitle">Cropital - Crowdfunding Startup</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2013 - 2014
+            </div>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 2 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Data and Reports Analyst</h3>
+            <span class="qualification__subtitle">Alorica - Bank Clients</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2014 - 2019
+            </div>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 3 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <!-- <span class="qualification__line"></span> -->
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Business and Technical Operations Analyst</h3>
+            <span class="qualification__subtitle">Insoon - Beauty eCommerce Startup</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2019 - Current
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+Preview.
+![](/readme-img/Qualification3.png)
+
+4. Create another div for other experiences.
+```
+<!--==================== QUALIFICATION ====================-->
+<section class="qualification section">
+  <h2 class="section__title">Qualification</h2>
+  <span class="section__subtitle">My Personal Journey</span>
+
+  <div class="qualification__container container">
+    <div class="qualification__tabs">
+      <div class="qualification__button button--flex">
+        <i class="uil uil-graduation-cap qualification__icon"></i>
+        Education
+      </div>
+
+      <div class="qualification__button button--flex">
+        <i class="uil uil-briefcase-alt qualification__icon"></i>
+        Work
+      </div>
+    </div>
+
+    <div class="qualification__sections">
+      <!--==================== QUALIFICATION CONTENT 1 ====================-->
+      <div class="qualification__content">
+        <!--==================== EDUCATION QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">BS Materials Science & Engineering</h3>
+            <span class="qualification__subtitle">University of the Philippines Diliman</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2008 - 2013
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Operations Executive</h3>
+            <span class="qualification__subtitle">Cropital - Crowdfunding Startup</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2013 - 2014
+            </div>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 2 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Data and Reports Analyst</h3>
+            <span class="qualification__subtitle">Alorica - Bank Clients</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2014 - 2019
+            </div>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 3 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <!-- <span class="qualification__line"></span> -->
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Business and Technical Operations Analyst</h3>
+            <span class="qualification__subtitle">Insoon - Beauty eCommerce Startup</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2019 - Current
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--==================== QUALIFICATION CONTENT 2 ====================-->
+      <div class="qualification__content">
+        <!--==================== EDUCATION QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">Software Engineer</h3>
+            <span class="qualification__subtitle">Microsoft</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2016 - 2018
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Frontend Developer</h3>
+            <span class="qualification__subtitle">Apple Inc</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2018 - 2020
+            </div>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 2 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">Ui Designer</h3>
+            <span class="qualification__subtitle">Figma</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2017 - 2018
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <!-- <span class="qualification__line"></span> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+### /assets/css/styles.css
+1. Now we're going to add styling and alignment for our education and work tabs.
+```
+/*==================== QUALIFICATION ====================*/
+.qualification__tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualification__button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+```
+
+Preview.
+![](/readme-img/Qualification4.png)
+
+2. Next we add a hover effect for the two tabs and increase their size.
+```
+/*==================== QUALIFICATION ====================*/
+.qualification__tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualification__button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualification__button:hover{
+  color: var(--first-color);
+}
+
+.qualification__icon{
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+```
+
+3. Now we'll be dividing the work and education experience. (Need to fix later.)
+```
+/*==================== QUALIFICATION ====================*/
+.qualification__tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualification__button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualification__button:hover{
+  color: var(--first-color);
+}
+
+.qualification__icon{
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.qualification__data{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+```
+
+Preview.
+![](/readme-img/Qualification5.png)
+
+
+4. Adjust the font-size and styling of the qualification name, subtitle and time period.
+```
+/*==================== QUALIFICATION ====================*/
+.qualification__tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualification__button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualification__button:hover{
+  color: var(--first-color);
+}
+
+.qualification__icon{
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.qualification__data{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualification__subtitle{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualification__calendar{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+```
+Preview.
+![](/readme-img/Qualification6.png)
+
+
+### index.html
+1. Now we add a bullet point per qualification line and we double the code block for div Qualification Content.
+```
+<!--==================== QUALIFICATION ====================-->
+<section class="qualification section">
+  <h2 class="section__title">Qualification</h2>
+  <span class="section__subtitle">My Personal Journey</span>
+
+  <div class="qualification__container container">
+    <div class="qualification__tabs">
+      <div class="qualification__button button--flex">
+        <i class="uil uil-graduation-cap qualification__icon"></i>
+        Education
+      </div>
+
+      <div class="qualification__button button--flex">
+        <i class="uil uil-briefcase-alt qualification__icon"></i>
+        Work
+      </div>
+    </div>
+
+    <div class="qualification__sections">
+      <!--==================== QUALIFICATION CONTENT 1 ====================-->
+      <div class="qualification__content qualification__active" data-content id="education">
+        <!--==================== EDUCATION QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">BS Materials Science & Engineering</h3>
+            <span class="qualification__subtitle">University of the Philippines Diliman</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2008 - 2013
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Operations Executive</h3>
+            <span class="qualification__subtitle">Cropital - Crowdfunding Startup</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2013 - 2014
+            </div>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 2 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Data and Reports Analyst</h3>
+            <span class="qualification__subtitle">Alorica - Bank Clients</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2014 - 2019
+            </div>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 3 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <!-- <span class="qualification__line"></span> -->
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Business and Technical Operations Analyst</h3>
+            <span class="qualification__subtitle">Insoon - Beauty eCommerce Startup</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2019 - Current
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--==================== QUALIFICATION CONTENT 2 ====================-->
+      <div class="qualification__content"  data-content id="work">
+        <!--==================== EDUCATION QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">Software Engineer</h3>
+            <span class="qualification__subtitle">Microsoft</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2016 - 2018
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Frontend Developer</h3>
+            <span class="qualification__subtitle">Apple Inc</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2018 - 2020
+            </div>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 2 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">Ui Designer</h3>
+            <span class="qualification__subtitle">Figma</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2017 - 2018
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <!-- <span class="qualification__line"></span> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+### /assets/css/styles.css
+1. Now we're going to hide the contents of the each qualification tab.
+```
+/*==================== QUALIFICATION ====================*/
+.qualification__tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualification__button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualification__button:hover{
+  color: var(--first-color);
+}
+
+.qualification__icon{
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.qualification__data{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualification__subtitle{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualification__calendar{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.qualification__rounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.qualification [data-content]{
+  display: none;
+}
+```
+
+Preview.
+![](/readme-img/Qualification7.png)
+
+2. Now we're going to show the content of the qualification tab and add a vertical line piercing all the bullets.
+```
+/*==================== QUALIFICATION ====================*/
+.qualification__tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualification__button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualification__button:hover{
+  color: var(--first-color);
+}
+
+.qualification__icon{
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.qualification__data{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualification__subtitle{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualification__calendar{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.qualification__rounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.qualification [data-content]{
+  display: none;
+}
+
+.qualification__active[data-content]{
+  display: block;
+}
+
+.qualification__line{
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px,-7px);
+}
+```
+
+Preview.
+![](/readme-img/Qualification8.png)
+
+
+### /assets/js/main.js
+1. Let's add a js effect so the tabs show the correct qualification when you click them and hide the other.
+```
+/*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+  tab.addEventListener('click', ()=>{
+      const target = document.querySelector(tab.dataset.tatrget)
+
+      tabContents.forEach(tabContent =>{
+        tabContent.classList.remove('qualification__active')
+      })
+      target.classList.add('qualification__active')
+
+      tabs.forEach(tab =>{
+        tab.classList.remove('qualification__active')
+      })
+      tab.classList.add('qualification__active')
+  })
+})
+```
+
+### index.html
+1. Under the 'qualification__tabs' div, update the code with the block below so it will connect with our new js code.
+```
+<div class="qualification__tabs">
+  <div class="qualification__button button--flex qualification__active" data-target='#education'>
+    <i class="uil uil-graduation-cap qualification__icon"></i>
+    Education
+  </div>
+
+  <div class="qualification__button button--flex" data-target='#work'>
+    <i class="uil uil-briefcase-alt qualification__icon"></i>
+    Work
+  </div>
+</div>
+
+```
+
+2. Now let's fix the contents of our qualifications.
+```
+<!--==================== QUALIFICATION ====================-->
+<section class="qualification section">
+  <h2 class="section__title">Qualification</h2>
+  <span class="section__subtitle">My Personal Journey</span>
+
+  <div class="qualification__container container">
+    <div class="qualification__tabs">
+      <div class="qualification__button button--flex qualification__active" data-target='#education'>
+        <i class="uil uil-graduation-cap qualification__icon"></i>
+        Education
+      </div>
+
+      <div class="qualification__button button--flex" data-target='#work'>
+        <i class="uil uil-briefcase-alt qualification__icon"></i>
+        Work
+      </div>
+    </div>
+
+    <div class="qualification__sections">
+      <!--==================== QUALIFICATION CONTENT 1 ====================-->
+      <div class="qualification__content qualification__active" data-content id="education">
+        <!--==================== EDUCATION QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">BS Materials Science & Engineering</h3>
+            <span class="qualification__subtitle">University of the Philippines Diliman</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2008 - 2013
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Microsoft Office Suite & Visual Basic Programming</h3>
+            <span class="qualification__subtitle">Informatics</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2013 - 2014
+            </div>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 2 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">Web Developer Bootcamp</h3>
+            <span class="qualification__subtitle">
+              Zuitt - Filipino startup offering web development
+              coding bootcamps in Manila, helping shape the future of IT Education in the Philippines.
+            </span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2018 - 2019
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <!-- <span class="qualification__line"></span> -->
+          </div>
+        </div>
+
+      </div>
+
+      <!--==================== QUALIFICATION CONTENT 2 ====================-->
+      <div class="qualification__content"  data-content id="work">
+        <!--==================== EDUCATION QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">Operations Executive</h3>
+            <span class="qualification__subtitle">Cropital - Philippines 1st Crowdfunding Startup</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2013 - 2014
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 1 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Data & Reports Analyst</h3>
+            <span class="qualification__subtitle">Alorica - Largest BPO Provider in the Philippines</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2014 - 2019
+            </div>
+          </div>
+        </div>
+
+        <!--==================== WORK QUALIFICATION 2 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">Business Intelligence Analyst</h3>
+            <span class="qualification__subtitle">Insoon - Beauty eCommerce Startup</span>
+            <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2019 - 2021
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <!-- <span class="qualification__line"></span> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+```
+
+Preview.
+![](/readme-img/Qualification9.png)
+
+
+Preview.
+![](/readme-img/Qualification9.png)
