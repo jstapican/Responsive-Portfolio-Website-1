@@ -3382,6 +3382,420 @@ tabs.forEach(tab =>{
 Preview.
 ![](/readme-img/Qualification9.png)
 
+## K. SERVICES
+### index.html
+1. Let's create our first service.
+```
+<!--==================== SERVICES ====================-->
+<section class="services section" id="services">
+  <h2 class="section__title">Services</h2>
+  <span class="section__subtitle">What I offer?</span>
+
+  <div class="services__container container grid">
+    <!--==================== SERVICES 1 ====================-->
+    <div class="services__content">
+      <div>
+        <i class="uil uil-web-grid services__icon"></i>
+        <h3 class="services__title">UI/UX <br> Designer</h3>
+      </div>
+
+      <span class="button button--flex button--small button--link services__button">
+        View More
+        <i class="uil uil-arrow-right button__icon"></i>
+      </span>
+    </div>
+  </div>
+
+</section>
+```
 
 Preview.
-![](/readme-img/Qualification9.png)
+![](/readme-img/Services1.png)
+
+2. Next we'll create a modal for our 1st servic (e.g. UI/UX Designer).
+```
+<div class="services__modal">
+  <div class="services__modal-content">
+    <h4 class="services__modal-title">UI/UX <br> Designer</h4>
+    <i class="uil uil-times services__modal-close"></i>
+
+    <ul class="services__modal-services grid">
+      <li class="services__modal-service">
+        <i class="uil uil-check-circle services__modal-icon"></i>
+        <p>I develop the user interface.</p>
+      </li>
+      <li class="services__modal-service">
+        <i class="uil uil-check-circle services__modal-icon"></i>
+        <p>Web page development.</p>
+      </li>
+      <li class="services__modal-service">
+        <i class="uil uil-check-circle services__modal-icon"></i>
+        <p>I create UX element interactions.</p>
+      </li>
+      <li class="services__modal-service">
+        <i class="uil uil-check-circle services__modal-icon"></i>
+        <p>I position your company brand.</p>
+      </li>
+
+    </ul>
+  </div>
+</div>
+```
+
+3. Have 2 more copies of our first service.
+```
+<div class="services__container container grid">
+  <!--==================== SERVICES 1 ====================-->
+  <div class="services__content">
+    <div>
+      <i class="uil uil-web-grid services__icon"></i>
+      <h3 class="services__title">UI/UX <br> Designer</h3>
+    </div>
+
+    <span class="button button--flex button--small button--link services__button">
+      View More
+      <i class="uil uil-arrow-right button__icon"></i>
+    </span>
+
+    <div class="services__modal">
+      <div class="services__modal-content">
+        <h4 class="services__modal-title">UI/UX <br> Designer</h4>
+        <i class="uil uil-times services__modal-close"></i>
+
+        <ul class="services__modal-services grid">
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>I develop the user interface.</p>
+          </li>
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>Web page development.</p>
+          </li>
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>I create UX element interactions.</p>
+          </li>
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>I position your company brand.</p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--==================== SERVICES 2 ====================-->
+  <div class="services__content">
+    <div>
+      <i class="uil uil-web-grid services__icon"></i>
+      <h3 class="services__title">UI/UX <br> Designer</h3>
+    </div>
+
+    <span class="button button--flex button--small button--link services__button">
+      View More
+      <i class="uil uil-arrow-right button__icon"></i>
+    </span>
+
+    <div class="services__modal">
+      <div class="services__modal-content">
+        <h4 class="services__modal-title">UI/UX <br> Designer</h4>
+        <i class="uil uil-times services__modal-close"></i>
+
+        <ul class="services__modal-services grid">
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>I develop the user interface.</p>
+          </li>
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>Web page development.</p>
+          </li>
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>I create UX element interactions.</p>
+          </li>
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>I position your company brand.</p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--==================== SERVICES 3 ====================-->
+  <div class="services__content">
+    <div>
+      <i class="uil uil-web-grid services__icon"></i>
+      <h3 class="services__title">UI/UX <br> Designer</h3>
+    </div>
+
+    <span class="button button--flex button--small button--link services__button">
+      View More
+      <i class="uil uil-arrow-right button__icon"></i>
+    </span>
+
+    <div class="services__modal">
+      <div class="services__modal-content">
+        <h4 class="services__modal-title">UI/UX <br> Designer</h4>
+        <i class="uil uil-times services__modal-close"></i>
+
+        <ul class="services__modal-services grid">
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>I develop the user interface.</p>
+          </li>
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>Web page development.</p>
+          </li>
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>I create UX element interactions.</p>
+          </li>
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>I position your company brand.</p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+Preview.
+![](/readme-img/Services2.png)
+
+4. Change the title and modal title for service 2 and 3.
+
+### /assets/css/styles.css
+1. We'll create some styling for container and content.
+```
+/*==================== SERVICES ====================*/
+.services__container{
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.services__content{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 3.5rem 0.5rem 1.25rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+```
+Preview.
+![](/readme-img/Services3.png)
+
+2. We'all add a shadow in our content when we hover it and adjust the size and color of our icons.
+```
+.services__content:hover{
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.services__icon{
+  display: block;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+```
+
+3. We apply styling in our '.services__title' and our '.services__button'.
+```
+.services__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-medium);
+}
+
+.services__button{
+  cursor: pointer;
+  font-size: var(--small-font-size);
+}
+```
+
+Preview.
+![](/readme-img/Services4.png)
+
+4. Go back to our 'Buttons' section and insert additional styling for our buttons.
+```
+.button--small{
+  padding: 0.75rem 1rem;
+}
+
+.button--link{
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+.button--link:hover{
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
+```
+
+Preview.
+![](/readme-img/Services5.png)
+
+5. Go back to the services then we'll add a slide effect when we hover to our '.services__button'.
+```
+.services__button:hover .button__icon{
+  transform: translateX(0.25rem);
+}
+```
+
+6. Now we're going to style our modal.
+```
+.services__modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  transition: 0.3s;
+}
+```
+Preview.
+![](/readme-img/Services7.png)
+
+7. Let's build a box for our modal.
+```
+.services__modal-content{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+```
+
+Preview.
+![](/readme-img/Services8.png)
+
+8. Let's fix the row-gap of each description in our modal.
+```
+.services__modal-services{
+  row-gap: 1rem;
+}
+
+.services__modal-service{
+  display: flex;
+}
+```
+
+Preview.
+![](/readme-img/Services9.png)
+
+9. Add a margin-bottom for our modal service title and add styling.
+```
+.services__modal-title{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+}
+```
+
+10. Now we'll be applying color using 'var(--first-color)' and styling for our close and modal icons.
+```
+.services__modal-close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.services__modal-icon{
+  color: var(--first-color);
+  margin-right: var(--mb-0-25);
+}
+```
+
+11. Now let's hide our modal so it will activate only when we click it by uncommenting opacity and visibility.
+```
+.services__modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+```
+
+12. Next let's make sure that when a modal is active it will be visible.
+```
+/* Active Modal */
+.active-modal{
+  opacity: 1;
+  visibility: visible;
+}
+```
+
+### /assets/js/main.js
+1. Let's a js to control the visibility or show/hide of our modal services.
+```
+/*==================== SERVICES MODAL ====================*/
+const modalViews = document.querySelectorAll('.services__modal'),
+      modalBtns = document.querySelectorAll('.services__button'),
+      modalCloses = document.querySelectorAll('.services__modal-close')
+
+let modal = function(modalClick){
+  modalViews[modalClick].classList.add('active-modal')
+}
+```
+
+2. Now let's a feature when we click the 'View More' it will show our modal and if we click the 'close' icon' it  will hide our modal.
+```
+/*==================== SERVICES MODAL ====================*/
+const modalViews = document.querySelectorAll('.services__modal'),
+      modalBtns = document.querySelectorAll('.services__button'),
+      modalCloses = document.querySelectorAll('.services__modal-close')
+
+let modal = function(modalClick){
+  modalViews[modalClick].classList.add('active-modal')
+}
+
+modalBtns.forEach((modalBtn, i) =>{
+  modalBtn.addEventListener('click', ()=>{
+    modal(i)
+  })
+})
+
+modalCloses.forEach((modalClose) =>{
+  modalClose.addEventListener('click', ()=>{
+    modalViews.forEach((modalView) =>{
+      modalView.classList.remove('active-modal')
+    })
+  })
+})
+```
+
+### /assets/css/styles.css
+1.
+
+## L.
+Preview.
+![](/readme-img/Services10.png)
