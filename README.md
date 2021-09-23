@@ -3792,10 +3792,276 @@ modalCloses.forEach((modalClose) =>{
   })
 })
 ```
+## L. PORTFOLIO - PAST PROJECTS
+### index.html
+1. Let's build our portfolio section.
+```
+<!--==================== PORTFOLIO ====================-->
+<section class="portfolio section" id="portfolio">
+  <h2 class="section__title">Portfolio</h2>
+  <span class="section__subtitle">Recent Works</span>
+
+  <div class="portfolio__container container">
+    <div>
+      <!--==================== PORTFOLIO 1 ====================-->
+      <div class="portfolio__content grid">
+        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">Modern Website</h3>
+          <p class="portfolio__description">
+            Website adaptable to all devices, wih UI components and animated interactions.
+          </p>
+          <a href="#" class="button button--flex button--small portfolio__button">
+            Demo
+            <i class="uil uil-arrow-right button__icon"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</section>
+```
+
+Preview.
+![](/readme-img/Portfolio1.png)
+
+2. Add two more portfolio subsection.
+```
+<!--==================== PORTFOLIO ====================-->
+<section class="portfolio section" id="portfolio">
+  <h2 class="section__title">Portfolio</h2>
+  <span class="section__subtitle">Recent Works</span>
+
+  <div class="portfolio__container container">
+    <div>
+      <!--==================== PORTFOLIO 1 ====================-->
+      <div class="portfolio__content grid">
+        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">Modern Website</h3>
+          <p class="portfolio__description">
+            Website adaptable to all devices, wih UI components and animated interactions.
+          </p>
+          <a href="#" class="button button--flex button--small portfolio__button">
+            Demo
+            <i class="uil uil-arrow-right button__icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <!--==================== PORTFOLIO 2 ====================-->
+      <div class="portfolio__content grid">
+        <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">Brand Design</h3>
+          <p class="portfolio__description">
+            Website adaptable to all devices, wih UI components and animated interactions.
+          </p>
+          <a href="#" class="button button--flex button--small portfolio__button">
+            Demo
+            <i class="uil uil-arrow-right button__icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <!--==================== PORTFOLIO 3 ====================-->
+      <div class="portfolio__content grid">
+        <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">Online Store</h3>
+          <p class="portfolio__description">
+            Website adaptable to all devices, wih UI components and animated interactions.
+          </p>
+          <a href="#" class="button button--flex button--small portfolio__button">
+            Demo
+            <i class="uil uil-arrow-right button__icon"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</section>
+```
 
 ### /assets/css/styles.css
-1.
+1. Let's do an initial overflow for the '.portfolio__container' and padding for the content.
+Also let's adjust the size of the portfolio images.
+```
+/*==================== PORTFOLIO ====================*/
+.portfolio__container{
+  overflow: initial;
+}
 
-## L.
+.portfolio__content{
+  padding: 0 1.5rem;
+}
+
+.portfolio__img{
+  width: 265px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+```
 Preview.
-![](/readme-img/Services10.png)
+![](/readme-img/Portfolio2.png)
+
+2. Next let's adjust the font-size and add a margin-bottom for the title and description of our portfolio.
+```
+.portfolio__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description{
+  margin-bottom: var(--mb-0-75);
+}
+```
+
+3. Add a sliding hover effect in the arrows of our portfolio buttons.
+```
+.portfolio__button:hover .button__icon{
+  transform: translateX(0.25rem);
+}
+```
+
+### index.html
+1. We'll be adding a touch slider framework, 'Swiper JS'.
+```
+<!--==================== SWIPER CSS ====================-->
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+```
+
+```
+<!--==================== SWIPER JS ====================-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+```
+
+2. Next let's add swiper classes in our portfolio section divs. For this we use Swiper JS' CSS mode.
+Preview.
+![](/readme-img/Portfolio3.png)
+
+3. From the CSS mode in Swiper JS website, we'll copy the code for arrows and pagination.
+```
+<!-- Swiper JS Arrows -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+
+<!-- Swiper JS Pagination -->
+<div class="swiper-pagination"></div>
+```
+
+4. Add custom icons from Iconscout for right and left arrows.
+```
+<!-- Swiper JS Arrows -->
+<div class="swiper-button-next">
+  <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>                  
+</div>
+<div class="swiper-button-prev">
+  <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+</div>
+```
+
+### /assets/js/main.js
+1. Now let's add a swiper js for the portfolio swiper from the CSS mode.
+Take note we replace the target class with ".portfolio__container".
+```
+/*==================== PORTFOLIO SWIPER  ====================*/
+let var swiper = new Swiper(".portfolio__container", {
+  cssMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
+});
+```
+
+2. Add a loop attribute and disable the mousewheel and keyboard attribute.
+```
+/*==================== PORTFOLIO SWIPER  ====================*/
+let swiper = new Swiper(".portfolio__container", {
+  cssMode: true,
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // mousewheel: true,
+  // keyboard: true,
+});
+```
+
+### /assets/css/styles.css
+1. Let's remove the arrow templates from swiper so only the Iconscout arrows will show.
+```
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: '';
+}
+```
+
+2. We'll increase the size and change the color of our Iconscout arrows.
+```
+.swiper-portfolio-icon{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+```
+
+3. Add a bit of space for our arrows so it is not very close to the content.
+```
+.swiper-button-prev{
+  left: -0.5rem;
+}
+
+.swiper-button-next{
+  right: -0.5rem;
+}
+```
+
+4. Let's push down our pagination bullets a bit and change the color of the active bullet.
+```
+.swiper-container-horizontal > .swiper-pagination-bullets{
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullets-active{
+  background-color: var(--first-color);
+}
+```
+
+5. Let's remove the outline for our swiper arrows and bullets.
+```
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+  outline: none;
+}
+```
+
+Preview.
+![](/readme-img/Portfolio4.png)
+
+
+## K.
+Preview.
+![](/readme-img/Portfolio1.png)
