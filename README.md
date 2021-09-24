@@ -4061,7 +4061,87 @@ let swiper = new Swiper(".portfolio__container", {
 Preview.
 ![](/readme-img/Portfolio4.png)
 
+## K. Project in Mind Jumbotron
+### index.html
+1. Let's create a 'contact me' banner.
+```
+<!--==================== PROJECT IN MIND ====================-->
+<section class="project section">
+  <div class="project__bg">
+    <div class="project__container container grid">
+      <div class="project__data">
+        <h2 class="project__title">You have a new project</h2>
+        <p class="project__description">
+          Contact me now and get a 30% discount on your new project.
+        </p>
+        <a href="#contact" class="button button--flex button--white">
+          Contact Me
+          <i class="uil uil-message project__icon button__icon"></i>
+        </a>
+      </div>
+
+      <img src="assets/img/project.png" alt="" class="project__img">
+    </div>
+  </div>
+
+</section>
+```
+Preview.
+![](/readme-img/Project1.png)
+
+
+### /assets/css/styles.css
+1. Add styling for our Jumbotron.
+```
+/*==================== PROJECT IN MIND ====================*/
+.project{
+  text-align: center;
+}
+
+.project__bg{
+  background-color: var(--first-color-second);
+  padding-top: 3rem;
+}
+
+.project__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project__description{
+  margin-bottom: var(--mb-1-5);
+}
+
+.project__title,
+.project__description{
+  color: #FFF;
+}
+
+.project__img{
+  width: 232px;
+  justify-self: center;
+}
+```
+
+Preview.
+![](/readme-img/Project2.png)
+
+2. Add additional styling for our buttons section.
+```
+.button--white{
+  background-color: #FFF;
+  color: var(--first-color);
+}
+
+.button--white:hover{
+  background-color: #FFF;
+}
+```
+Preview.
+![](/readme-img/Project3.png)
+
+
 
 ## K.
 Preview.
-![](/readme-img/Portfolio1.png)
+![](/readme-img/Project2.png)
