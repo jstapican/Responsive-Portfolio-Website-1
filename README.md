@@ -4141,7 +4141,233 @@ Preview.
 ![](/readme-img/Project3.png)
 
 
+## L. TESTIMONIAL
+### index.html
+1. Create a new section and insert the ff code block. Get the star icons from Iconscout.
+```
+<!--==================== TESTIMONIAL ====================-->
+<section class="testimonial section">
+  <h2 class="section__title">Testimonial</h2>
+  <span class="section__subtitle">What my Clients are Saying</span>
 
-## K.
+  <div class="testimonial__container container">
+    <div>
+      <!--==================== TESTIMONIAL 1 ====================-->
+      <div class="testimonial__content">
+        <div class="testimonial__data">
+          <div class="testimonial__header">
+            <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
+
+            <div>
+              <h3 class="testimonial__name">Sara Smith</h3>
+              <span class="testimonial_client">Client</span>
+            </div>
+          </div>
+
+          <div>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+          </div>
+        </div>
+
+        <p class="testimonial__description">
+          I get a good impression,
+          I carry out my project with all the possible quality
+          and attention and support 24 hours a day.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+```
+
 Preview.
-![](/readme-img/Project2.png)
+![](/readme-img/Testimonial1.png)
+
+2. Create 2 more testimonial divs.
+```
+<!--==================== TESTIMONIAL ====================-->
+<section class="testimonial section">
+  <h2 class="section__title">Testimonial</h2>
+  <span class="section__subtitle">What my Clients are Saying</span>
+
+  <div class="testimonial__container container">
+    <div>
+      <!--==================== TESTIMONIAL 1 ====================-->
+      <div class="testimonial__content">
+        <div class="testimonial__data">
+          <div class="testimonial__header">
+            <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
+
+            <div>
+              <h3 class="testimonial__name">Sara Smith</h3>
+              <span class="testimonial_client">Client</span>
+            </div>
+          </div>
+
+          <div>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+          </div>
+        </div>
+
+        <p class="testimonial__description">
+          I get a good impression,
+          I carry out my project with all the possible quality
+          and attention and support 24 hours a day.
+        </p>
+      </div>
+
+      <!--==================== TESTIMONIAL 2 ====================-->
+      <div class="testimonial__content">
+        <div class="testimonial__data">
+          <div class="testimonial__header">
+            <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+
+            <div>
+              <h3 class="testimonial__name">Matt Robinson</h3>
+              <span class="testimonial_client">Client</span>
+            </div>
+          </div>
+
+          <div>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+          </div>
+        </div>
+
+        <p class="testimonial__description">
+          I get a good impression,
+          I carry out my project with all the possible quality
+          and attention and support 24 hours a day.
+        </p>
+      </div>
+
+      <!--==================== TESTIMONIAL 3 ====================-->
+      <div class="testimonial__content">
+        <div class="testimonial__data">
+          <div class="testimonial__header">
+            <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__img">
+
+            <div>
+              <h3 class="testimonial__name">Raul Harris</h3>
+              <span class="testimonial_client">Client</span>
+            </div>
+          </div>
+
+          <div>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+            <i class="uil uil-star testimonial__icon-star"></i>
+          </div>
+        </div>
+
+        <p class="testimonial__description">
+          I get a good impression,
+          I carry out my project with all the possible quality
+          and attention and support 24 hours a day.
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+
+</section>
+```
+
+Preview.
+![](/readme-img/Testimonial2.png)
+
+### /assets/css/styles.css
+1. Now let's create some styling for our testimonials.
+```
+/*==================== TESTIMONIAL ====================*/
+.testimonial__data,
+.testimonial__header{
+  display: flex;
+}
+
+.testimonial__data{
+  justify-content: space-between;
+  margin-bottom: var(--mb-1-5);
+}
+
+.testimonial__img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: var(--mb-0-75);
+}
+```
+
+Preview.
+![](/readme-img/Testimonial3.png)
+
+2. Let's fix the styling of our testimonial name, client and stars.
+```
+.testimonial__name{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);.testimonial__name{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+  }
+
+  .testimonial__client{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);  
+  }
+
+  .testimonial__description{
+    margin-bottom: var(--mb-2-5);
+  }
+
+  .testimonial__icon-start{
+    color: var(--first-color);
+  }
+```
+
+
+
+### index.html
+1. Now let's add Swiper JS class using 'pagination dynamic' demo.
+
+Preview.
+![](/readme-img/Testimonial5.png)
+
+Preview.
+![](/readme-img/Testimonial6.png)
+
+### /assets/js/main.js
+1. We'll change the 'swiper' to 'swiperPortfolio' in the Portfolio section.
+After that we will add a js for the slider effect of the testimonial.
+
+Preview.
+![](/readme-img/Testimonial7.png)
+
+### /assets/css/styles.css
+1. Next we'll create styling for our navigation bullets.
+```
+.swiper-container .swiper-pagination-testimonial{
+  bottom: 0;
+}
+```
+
+Preview.
+![](/readme-img/Testimonial8.png)
+
+## M.
+Preview.
+![](/readme-img/Testimonial9.png)
