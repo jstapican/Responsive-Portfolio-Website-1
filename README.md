@@ -4368,6 +4368,175 @@ Preview.
 Preview.
 ![](/readme-img/Testimonial8.png)
 
-## M.
+## M. Contact
+### index.html
+1. Now let's create a 'contact me' section.
+```
+<!--==================== CONTACT ME ====================-->
+<section class="contact section" id="contact">
+  <h2 class="section__title">Contact Me</h2>
+  <span class="section__subtitle">Get in Touch</span>
+
+  <div class="contact__container container grid">
+    <div>
+      <div class="contact__information">
+        <i class="uil uil-envelope contact__icon"></i>
+
+        <div>
+          <h3 class="contact__title">Email Me</h3>
+          <span class="contact__subtitle">johnsteven.tapican@gmail.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
 Preview.
-![](/readme-img/Testimonial9.png)
+![](/readme-img/Contact1.png)
+
+2. Add a form to enter name.
+```
+<!--==================== CONTACT ME ====================-->
+<section class="contact section" id="contact">
+  <h2 class="section__title">Contact Me</h2>
+  <span class="section__subtitle">Get in Touch</span>
+
+  <div class="contact__container container grid">
+    <div>
+      <div class="contact__information">
+        <i class="uil uil-envelope contact__icon"></i>
+
+        <div>
+          <h3 class="contact__title">Email Me</h3>
+          <span class="contact__subtitle">johnsteven.tapican@gmail.com</span>
+        </div>
+      </div>
+    </div>
+
+    <form action="" class="contact__form grid">
+      <div class="contact__inputs grid">
+        <div class="contact__content">
+          <label for="" class="contact__label">Name</label>
+          <input type="text" class="contact__input">
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+```
+
+Preview.
+![](/readme-img/Contact2.png)
+
+3. Add another input field for email, project and message.
+```
+<!--==================== CONTACT ME ====================-->
+<section class="contact section" id="contact">
+  <h2 class="section__title">Contact Me</h2>
+  <span class="section__subtitle">Get in Touch</span>
+
+  <div class="contact__container container grid">
+    <div>
+      <div class="contact__information">
+        <i class="uil uil-envelope contact__icon"></i>
+
+        <div>
+          <h3 class="contact__title">Email Me</h3>
+          <span class="contact__subtitle">johnsteven.tapican@gmail.com</span>
+        </div>
+      </div>
+    </div>
+
+    <form action="" class="contact__form grid">
+      <div class="contact__inputs grid">
+        <div class="contact__content">
+          <label for="" class="contact__label">Name</label>
+          <input type="text" class="contact__input">
+        </div>
+        <div class="contact__content">
+          <label for="" class="contact__label">Email</label>
+          <input type="email" class="contact__input">
+        </div>
+      </div>
+      <div class="contact__content">
+        <label for="" class="contact__label">Project</label>
+        <input type="text" class="contact__input">
+      </div>
+      <div class="contact__content">
+        <label for="" class="contact__label">Message</label>
+        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+      </div>
+
+      <div>
+        <a href="#" class="button button--flex">
+          Send Message
+          <i class="uil uil-message button__icon"></i>
+        </a>
+      </div>
+    </form>
+  </div>
+</section>
+```
+
+Preview.
+![](/readme-img/Contact3.png)
+
+### /assets/css/styles.css
+1.  Add styling for our contact info.
+```
+/*==================== CONTACT ME ====================*/
+.contact__container{
+  row-gap: 3rem;
+}
+
+.contact__information{
+  display: flex;
+  margin-bottom: var(--mb-2);
+}
+
+.contact__icon{
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+}
+
+.contact__title{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.contact__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.contact__content{
+  background-color: var(--input-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.contact__label{
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
+
+.contact__input{
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
+```
+
+Preview.
+![](/readme-img/Contact4.png)
+
+## N.
+Preview.
+![](/readme-img/Contact1.png)
