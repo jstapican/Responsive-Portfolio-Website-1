@@ -4537,6 +4537,111 @@ Preview.
 Preview.
 ![](/readme-img/Contact4.png)
 
-## N.
+
+## N. Footer
+### index.html
+1. Let's create a footer with our socials.
+```
+<!--==================== FOOTER ====================-->
+<footer class="footer">
+  <div class="footer__bg">
+    <div class="footer__container container grid">
+      <div>
+        <h1 class="footer__title">Steven</h1>
+        <span class="footer__subtitle">Fullstack RPA Developer</span>
+      </div>
+
+      <ul class="footer__links">
+        <li>
+          <a href="#services" class="footer__link">Services</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="footer__link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contact" class="footer__link">Contact Me</a>
+        </li>
+      </ul>
+
+      <div class="footer__socials">
+        <a href="https://www.facebook.com" target="_blank" class="footer__social">
+          <i class="uil uil-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="footer__social">
+          <i class="uil uil-instagram"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="footer__social">
+          <i class="uil uil-twitter-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+```
+
 Preview.
-![](/readme-img/Contact1.png)
+![](/readme-img/Footer1.png)
+
+### /assets/css/styles.css
+1. Add styling for our footer.
+```
+/*==================== FOOTER ====================*/
+.footer{
+  padding-top: 2rem;
+}
+
+.footer__container{
+  row-gap: 3.5rem;
+}
+
+.footer__bg{
+  background-color: var(--first-color-second);
+  padding: 2rem 0 3rem;
+}
+
+.footer__title{
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.footer__subtitle{
+  font-size: var(--small-font-size);
+}
+
+.footer__link{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer__link:hover{
+  color: var(--first-color-lighter);
+}
+
+.footer__social{
+  font-size: 1.25rem;
+  margin-right: var(--mb-1-5);
+}
+
+.footer__social:hover{
+  color: var(--first-color-lighter);
+}
+
+.footer__copy{
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: var(--mb-3);
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social{
+  color: #FFF;
+}
+```
+
+## O.
+Preview.
+![](/readme-img/Footer1.png)
