@@ -4733,7 +4733,27 @@ This will highlight the current section we are in in the nav menu..
 Preview.
 ![](/readme-img/Scroll1.png)
 
+## P. Change Background Header
+### /assets/js/main.js
+```
+/*==================== CHANGE BACKGROUND HEADER ====================*/
+function scrollHeader(){
+    const nav = document.getElementById('header')
+    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+    if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
+```
 
-## P.
+### /assets/css/styles.css
+```
+/* Change background header */
+.scroll-header{
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+```
+
+
+## Q.
 Preview.
 ![](/readme-img/Scroll1.png)
