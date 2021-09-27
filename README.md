@@ -4753,7 +4753,62 @@ window.addEventListener('scroll', scrollHeader)
 }
 ```
 
+## Q. SCROLL TOP
+### index.html
+1. Get an 'arrow-up' from Iconscout and add the ff class on it.
+```
+<!--==================== SCROLL TOP ====================-->
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="uil uil-arrow-up scrollup__icon"></i>
+</a>
+```
 
-## Q.
+### /assets/css/styles.css
+```
+/*========== SCROLL UP ==========*/
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--first-color);
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+}
+
+.scrollup:hover{
+  background-color: var(--first-color-alt);
+}
+
+.scrollup__icon{
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+/* Show scroll */
+.show-scroll{
+  bottom: 5rem;
+}
+```
+
+### /assets/js/main.js
+```
+/*==================== SHOW SCROLL UP ====================*/
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+```
+
 Preview.
-![](/readme-img/Scroll1.png)
+![](/readme-img/Scroll2.png)
+
+## R.
+
+## S.
+Preview.
+![](/readme-img/Scroll2.png)
